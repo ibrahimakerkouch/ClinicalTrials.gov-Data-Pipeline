@@ -1,0 +1,34 @@
+Step 1: Create a Batch File
+
+    Open Notepad: Start a new text document in Notepad.
+
+    Write the Batch Script: Enter the following lines, replacing path_to_your_script.py with the full path to your Python script.
+
+    batch
+
+		@echo off
+		python "C:\path\to\your\script.py"
+		pause
+
+    Save the File: Save the file with a .bat extension, for example, run_script.bat.
+
+Step 2: Create a Shortcut to the Batch File
+
+    Locate the Batch File: Navigate to where you saved your .bat file.
+    Right-Click the Batch File: Select "Create shortcut."
+    Move the Shortcut: Drag the shortcut to the desktop or right-click it and select "Pin to taskbar."
+
+Step 3: Modify Shortcut Properties (Optional)
+
+    Right-Click the Shortcut: Select "Properties."
+    Change Icon: Click "Change Icon" to select a custom icon if desired.
+    Set Start In Directory: Under the "Shortcut" tab, set the "Start in" field to the directory where your Python script is located. This is important for relative paths.
+
+Step 4: Run the Script
+
+You can now click the shortcut on your taskbar to run your Python script. The command prompt will open, run the script, and remain open until you press a key (due to the pause command).
+
+Notes
+
+    Ensure Python is added to your system's PATH variable so that it can be called from any directory else replace python with "C:\path\to\your\python.exe".
+    You can also use a virtual environment for your script by activating it in the batch file before calling the Python script.
