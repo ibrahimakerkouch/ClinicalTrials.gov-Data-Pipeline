@@ -15,7 +15,7 @@ def extract_data():
     host = "localhost"        # or the server IP/address
     database = "CancerClinicalTrials"
     user = "postgres"
-    password = "Admin147@_"
+    password = "Str0ng!Pass123"
     port = "5432"             # Default PostgreSQL port
 
     ## Creating the engine using the connection string
